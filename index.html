@@ -14,11 +14,41 @@
     <!-----======BOOTSTRAP CSS==========-->
     <link rel="stylesheet" href="assets/plug-in/bootstrap/bootstrap.min.css">
     <!-----======BOOTSTRAP CSS==========-->
+    <!---==AOS CSS===----->
+    <link rel="stylesheet" href="assets/plug-in/aos-js/aos.css">
+    <!---==AOS CSS===----->
     <!-------======CUSTOM CSS======-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-------======CUSTOM CSS======-->
   </head>
   <body>
+    <!--TALK MODAL STARTS---->
+    <div class="modal fade" id="talk-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title fs-5 text-center" id="exampleModalLabel">Subscribe to our newsletter</h4>
+            <form>
+              <div class="mb-3">
+                <label for="talk-name" class="form-label">Name*</label>
+                <input type="text" class="form-control" id="talk-name" placeholder="Your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="talk-email" class="form-label">Email*</label>
+                <input type="email" class="form-control" id="talk-email" placeholder="Your working email" required>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="filled-button">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TALK MODAL ENDS -->
     <!----VIDEO-MODAL STARTS--------------------->
     <div class="modal fade modal-video" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel"
       aria-hidden="true">
@@ -36,7 +66,8 @@
       </div>
     </div>
     <!----VIDEO-MODAL ENDS--------------------->
-    <div class="home-page_hero" style="background: url('assets/img/homepage/background.png') center center/cover no-repeat;" id="totop">
+    <div class="home-page_hero"
+      style="background: url('assets/img/homepage/background.png') center center/cover no-repeat;" id="totop">
       <!----HEADER STARTS------------>
       <header class="main-header">
         <nav class="navbar navbar-expand-lg">
@@ -60,8 +91,11 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="services.html">Services</a></li>
+                    <li><a class="dropdown-item" href="careers.html">Career</a></li>
                     <li><a class="dropdown-item" href="optimization.html">Search Engine Optimization</a></li>
-                    <li><a class="dropdown-item" href="services.html">Services</a></li>
+                    <li><a class="dropdown-item" href="rate.html">Rate for Lovato Company</a></li>
+                    <li><a class="dropdown-item" href="maximize.html">Maximize</a></li>
+                    <li><a class="dropdown-item" href="rate.html">Our Rate</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -78,7 +112,7 @@
                 </li>
               </ul>
               <div class="header-call">
-                <a href="maximize.html" class="filled-button header-btn">Talk to a human</a>
+                <button type="button" class="filled-button header-btn" data-bs-toggle="modal" data-bs-target="#talk-modal">Talk to a human</>
               </div>
             </div>
           </div>
@@ -88,10 +122,10 @@
       <!-----HERO- STARTS---------------->
       <section class="hero">
         <div class="custom-container">
-          <div class="hero-up">
+          <div class="hero-up" >
             <div class="row">
               <div class="col-12 col-sm-7 col-md-7">
-                <div class="hero-banner">
+                <div class="hero-banner" data-aos="fade-down" data-aos-duration="2000">
                   <h1 class="hero-title">Best <span>SEO & Marketing</span> Solutions for You</h1>
                   <div class="hero-bottom">
                     <div class="banner-button">
@@ -117,7 +151,7 @@
               </div>
             </div>
           </div>
-          <div class="hero-features">
+          <div class="hero-features" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
             <div class="row">
               <div class="col-12 col-sm-4 col-md-4">
                 <div class="feature-item">
@@ -285,7 +319,7 @@
           <div class="home-about-wrapper">
             <div class="row">
               <div class="col-12 col-sm-12 col-md-5">
-                <div class="home-about-left">
+                <div class="home-about-left" data-aos="fade-right">
                   <h2 class="section-title">Createx Agency </h2>
                   <p class="home-about__descr">
                     Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes, viverra ullamcorper mi dui, nulla
@@ -301,7 +335,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-12 col-md-7">
+              <div class="col-12 col-sm-12 col-md-7" data-aos="fade-left">
                 <div class="home-about-col">
                   <div class="home-about-pic">
                     <img src="assets/img/homepage/home-about-team.png" alt="our team">
@@ -351,7 +385,7 @@
     </section>
     <!---HOMEPAGE ABOUT ENDS---------------------->
     <!-----HOMEPAGE SERVICES STARTS----------------->
-    <section class="home-service">
+    <section class="home-service" data-aos="fade-in" data-aos-duration="1200">
       <div class="custom-container">
         <h2 class="section-title">Createx Agency </h2>
         <div class="home-service-tabs">
@@ -506,7 +540,7 @@
       <div class="custom-container">
         <div class="row">
           <div class="col-12 col-md-12 col-lg-7">
-            <div class="home-question-col">
+            <div class="home-question-col" data-aos="fade-up" data-aos-duration="1500">
               <div class="analysis-form__title">Freequently Ask Questions</div>
               <div class="accordion-wrapper services-accordion">
                 <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -580,7 +614,7 @@
             </div>
           </div>
           <div class="col-12 col-md-12 col-lg-5">
-            <div class="home-illus-wrapper about-illus">
+            <div class="home-illus-wrapper about-illus" data-aos="fade-up" data-aos-duration="1500">
               <div class="home-question__illus">
                 <img src="assets/img/homepage/home-question-illustration.png" alt="illustration">
               </div>
@@ -595,7 +629,7 @@
     <section class="case-studios">
       <div class="custom-container">
         <div class="section-title text-start">Read our clients' case studies</div>
-        <div class="case-card-wrapper">
+        <div class="case-card-wrapper" data-aos="fade-up" data-aos-duration="1500">
           <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
               <a href="#">
@@ -732,7 +766,7 @@
         <div class="row">
           <div class="col-12 col-sm-6 col-md-6 lg-6 col-xl-4">
             <div class="home-benefit">
-              <div class="benefit-wrapper">
+              <div class="benefit-wrapper" data-aos="fade-up" data-aos-duration="1500">
                 <div class="icon-wrapper">
                   <img src="assets/img/icon/ic-speaker.png" alt="icon">
                 </div>
@@ -740,7 +774,7 @@
                 <span>Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip
                   sunt.</span>
               </div>
-              <div class="benefit-wrapper">
+              <div class="benefit-wrapper" data-aos="fade-up" data-aos-duration="1500">
                 <div class="icon-wrapper">
                   <img src="assets/img/icon/ic-target.png" alt="icon">
                 </div>
@@ -748,7 +782,7 @@
                 <span>Cursus sit eu viverra suspendisse eu quisque enim est tortor. Mauris ornare convallis nisi diam
                   imperdiet. </span>
               </div>
-              <div class="benefit-wrapper">
+              <div class="benefit-wrapper" data-aos="fade-up" data-aos-duration="1500">
                 <div class="icon-wrapper">
                   <img src="assets/img/icon/ic-checklist.png" alt="icon">
                 </div>
@@ -768,7 +802,7 @@
           </div>
           <div class="col-12 col-sm-6 col-md-6 lg-6 col-xl-4">
             <div class="home-benefit">
-              <div class="benefit-wrapper">
+              <div class="benefit-wrapper" data-aos="fade-up" data-aos-duration="1500">
                 <div class="icon-wrapper">
                   <img src="assets/img/icon/ic-chat.png" alt="icon">
                 </div>
@@ -777,7 +811,7 @@
                   integer
                   amet.</span>
               </div>
-              <div class="benefit-wrapper">
+              <div class="benefit-wrapper" data-aos="fade-up" data-aos-duration="1500">
                 <div class="icon-wrapper">
                   <img src="assets/img/icon/ic-view.png" alt="icon">
                 </div>
@@ -785,7 +819,7 @@
                 <span>Culpa nostrud commodo ea consequat aliquip reprehenderit. Ve niam velit nostrud aliquip
                   sunt.</span>
               </div>
-              <div class="benefit-wrapper">
+              <div class="benefit-wrapper" data-aos="fade-up" data-aos-duration="1500">
                 <div class="icon-wrapper">
                   <img src="assets/img/icon/ic-like.png" alt="icon">
                 </div>
@@ -1256,6 +1290,9 @@
       </div>
     </footer>
     <!-----FOOTER ENDS------------->
+    <!---AOS JS----->
+    <script src="assets/plug-in/aos-js/aos.js"></script>
+    <!---AOS JS----->
     <!---BOOTSTRAP BUNDLE---->
     <script src="assets/plug-in/bootstrap/bootstrap.bundle.min.js"></script>
     <!---BOOTSTRAP BUNDLE---->

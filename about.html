@@ -11,6 +11,9 @@
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!---=======FONTAWESOME====-->
+    <!---==AOS CSS===----->
+    <link rel="stylesheet" href="assets/plug-in/aos-js/aos.css">
+    <!---==AOS CSS===----->
     <!-----======BOOTSTRAP CSS==========-->
     <link rel="stylesheet" href="assets/plug-in/bootstrap/bootstrap.min.css">
     <!-----======BOOTSTRAP CSS==========-->
@@ -19,6 +22,33 @@
     <!---========CUSTOM CSS========-->
   </head>
   <body>
+    <!--TALK MODAL STARTS---->
+    <div class="modal fade" id="talk-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title fs-5 text-center" id="exampleModalLabel">Subscribe to our newsletter</h4>
+            <form>
+              <div class="mb-3">
+                <label for="talk-name" class="form-label">Name*</label>
+                <input type="text" class="form-control" id="talk-name" placeholder="Your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="talk-email" class="form-label">Email*</label>
+                <input type="email" class="form-control" id="talk-email" placeholder="Your working email" required>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="filled-button">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TALK MODAL ENDS -->
     <!----VIDEO-MODAL--------------------->
     <div class="modal fade modal-video" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel"
       aria-hidden="true">
@@ -60,8 +90,11 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="services.html">Services</a></li>
+                    <li><a class="dropdown-item" href="careers.html">Career</a></li>
                     <li><a class="dropdown-item" href="optimization.html">Search Engine Optimization</a></li>
-                    <li><a class="dropdown-item" href="services.html">Services</a></li>
+                    <li><a class="dropdown-item" href="rate.html">Rate for Lovato Company</a></li>
+                    <li><a class="dropdown-item" href="maximize.html">Maximize</a></li>
+                    <li><a class="dropdown-item" href="rate.html">Our Rate</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -78,7 +111,7 @@
                 </li>
               </ul>
               <div class="header-call">
-                <a href="#" class="filled-button header-btn">Talk to a human</a>
+                <a href="#" class="filled-button header-btn" data-bs-toggle="modal" data-bs-target="#talk-modal">Talk to a human</a>
               </div>
             </div>
           </div>
@@ -88,7 +121,7 @@
       <!-----HERO-STARTS---------------->
       <section class="hero hero-about">
         <div class="custom-container">
-          <div class="page-container">
+          <div class="page-container" data-aos="fade-down" data-aos-duration="2000">
             <div class="page-breadcrumb">
               <nav
                 style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
@@ -104,7 +137,7 @@
               proud to offer you quality and exemplary service. We help our clients get better results with our creative
               and data-driven approach to online advertising. </p>
           </div>
-          <div class="hero-features">
+          <div class="hero-features" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
             <div class="row">
               <div class="col-12 col-sm-4 col-md-4">
                 <div class="feature-item">
@@ -196,10 +229,10 @@
         <div class="core-values-inner">
           <div class="row">
             <div class="col-12 col-md-12 col-lg-4">
-              <div class="section-title">The core values we stand for</div>
+              <div class="section-title" data-aos="fade-up" data-aos-duration="1500">The core values we stand for</div>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
-              <div class="benefit-wrapper p-0 border-0">
+              <div class="benefit-wrapper p-0 border-0" data-aos="fade-up" data-aos-duration="1500">
                 <div class="icon-wrapper">
                   <img src="assets/img/icon/like.png" alt="icon">
                 </div>
@@ -207,7 +240,7 @@
                 <span>Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra
                   scelerisque consequat.</span>
               </div>
-              <div class="benefit-wrapper p-0 border-0">
+              <div class="benefit-wrapper p-0 border-0" data-aos="fade-up" data-aos-duration="1500">
                 <div class="icon-wrapper">
                   <img src="assets/img/icon/ic-checklist.png" alt="icon">
                 </div>
@@ -216,7 +249,7 @@
                   consequat.</span>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500">
               <div class="benefit-wrapper p-0 border-0">
                 <div class="icon-wrapper">
                   <img src="assets/img/icon/ic-view.png" alt="icon">
@@ -225,7 +258,7 @@
                 <span>Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim
                   purus. </span>
               </div>
-              <div class="benefit-wrapper p-0 border-0">
+              <div class="benefit-wrapper p-0 border-0" data-aos="fade-up" data-aos-duration="1500">
                 <div class="icon-wrapper">
                   <img src="assets/img/icon/ic-management.png" alt="icon">
                 </div>
@@ -248,12 +281,12 @@
               <div class="agency-left">
                 <div class="row">
                   <div class="col-12">
-                    <div class="agency-left-up">
+                    <div class="agency-left-up" data-aos="fade-up" data-aos-duration="1500">
                       <img src="assets/img/about/agency-1.png" alt="seo agency">
                     </div>
                   </div>
                   <div class="col-12">
-                    <div class="agency-left-bottom">
+                    <div class="agency-left-bottom" data-aos="fade-up" data-aos-duration="1500">
                       <img src="assets/img/about/agency-2.png" alt="seo agency">
                     </div>
                   </div>
@@ -261,12 +294,12 @@
               </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-              <div class="agency-middle">
+              <div class="agency-middle" data-aos="fade-up" data-aos-duration="1500">
                 <img src="assets/img/about/agency-3.png" alt="seo agency">
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-5">
-              <div class="agency-right">
+              <div class="agency-right" data-aos="fade-up" data-aos-duration="1500">
                 <img src="assets/img/about/agency-4.png" alt="seo agency">
               </div>
             </div>
@@ -285,7 +318,7 @@
     </section>
     <!----MORE ABOUT-US ENDS---------->
     <!------OUR AWARDS SECTION STARTS---->
-    <section class="home-questions about-awards">
+    <section class="home-questions about-awards" data-aos="fade-up" data-aos-duration="1500">
       <div class="custom-container">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-5">
@@ -339,7 +372,7 @@
         </div>
       </div>
       </div>
-    </section>   
+    </section>
     <!------OUR AWARDS SECTION ENDS---->
     <!-------PURPLE FORMS SECTION STARTS-->
     <section class="purple-form">
@@ -515,7 +548,7 @@
           <div class="team">
             <div class="row">
               <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div class="team-member">
+                <div class="team-member" data-aos="zoom-in" data-aos-duration="1500">
                   <div class="team-member_pic">
                     <img src="assets/img/about/team-member-1.png" alt="team member">
                     <div class="member-social_media">
@@ -533,7 +566,7 @@
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div class="team-member">
+                <div class="team-member" data-aos="zoom-in" data-aos-duration="1500">
                   <div class="team-member_pic">
                     <img src="assets/img/about/team-member-2.png" alt="team member">
                     <div class="member-social_media">
@@ -551,7 +584,7 @@
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div class="team-member">
+                <div class="team-member" data-aos="zoom-in" data-aos-duration="1500">
                   <div class="team-member_pic">
                     <img src="assets/img/about/team-member-3.png" alt="team member">
                     <div class="member-social_media">
@@ -569,7 +602,7 @@
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div class="team-member">
+                <div class="team-member" data-aos="zoom-in" data-aos-duration="1500">
                   <div class="team-member_pic">
                     <img src="assets/img/about/team-member-4.png" alt="team member">
                     <div class="member-social_media">
@@ -587,7 +620,7 @@
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div class="team-member">
+                <div class="team-member" data-aos="zoom-in" data-aos-duration="1500">
                   <div class="team-member_pic">
                     <img src="assets/img/about/team-member-5.png" alt="team member">
                     <div class="member-social_media">
@@ -605,7 +638,7 @@
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div class="team-member">
+                <div class="team-member" data-aos="zoom-in" data-aos-duration="1500">
                   <div class="team-member_pic">
                     <img src="assets/img/about/team-member-6.png" alt="team member">
                     <div class="member-social_media">
@@ -623,7 +656,7 @@
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div class="team-member">
+                <div class="team-member" data-aos="zoom-in" data-aos-duration="1500">
                   <div class="team-member_pic">
                     <img src="assets/img/about/team-member-57.png" alt="team member">
                     <div class="member-social_media">
@@ -641,7 +674,7 @@
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div class="team-member">
+                <div class="team-member" data-aos="zoom-in" data-aos-duration="1500">
                   <div class="team-member_pic">
                     <img src="assets/img/about/team-member-8.png" alt="team member">
                     <div class="member-social_media">
@@ -755,7 +788,7 @@
     </section>
     <!--ACCORDION-STARTS--->
     <!----CAREERS--STARTS----------->
-    <section class="careers">
+    <section class="careers" data-aos="fade-up" data-aos-duration="1500">
       <div class="custom-container">
         <div class="careers-inner">
           <div class="row">
@@ -780,7 +813,7 @@
     </section>
     <!----CAREERS--ENDS----------->
     <!-----NEWS--STARTS------------->
-    <section class="careers-news">
+    <section class="careers-news" data-aos="fade-up" data-aos-duration="1500">
       <div class="custom-container">
         <div class="home-news-wrapper">
           <div class="row">
@@ -1056,6 +1089,9 @@
       </div>
     </footer>
     <!------FOOTER ENDS------->
+    <!---AOS JS----->
+    <script src="assets/plug-in/aos-js/aos.js"></script>
+    <!---AOS JS----->
     <!---BOOTSTRAP BUNDLE---->
     <script src="assets/plug-in/bootstrap/bootstrap.bundle.min.js"></script>
     <!---BOOTSTRAP BUNDLE---->

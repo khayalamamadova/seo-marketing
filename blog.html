@@ -11,6 +11,9 @@
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!---=======FONTAWESOME====--->
+    <!---==AOS CSS===----->
+    <link rel="stylesheet" href="assets/plug-in/aos-js/aos.css">
+    <!---==AOS CSS===----->
     <!-----======BOOTSTRAP CSS==========-->
     <link rel="stylesheet" href="assets/plug-in/bootstrap/bootstrap.min.css">
     <!-----======BOOTSTRAP CSS==========-->
@@ -19,6 +22,33 @@
     <!-------======CUSTOM CSS======-->
   </head>
   <body>
+    <!--TALK MODAL STARTS---->
+    <div class="modal fade" id="talk-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title fs-5 text-center" id="exampleModalLabel">Subscribe to our newsletter</h4>
+            <form>
+              <div class="mb-3">
+                <label for="talk-name" class="form-label">Name*</label>
+                <input type="text" class="form-control" id="talk-name" placeholder="Your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="talk-email" class="form-label">Email*</label>
+                <input type="email" class="form-control" id="talk-email" placeholder="Your working email" required>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="filled-button">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TALK MODAL ENDS -->
     <div class="cover" id="totop" style="background: url('assets/img/blog/background.png');">
       <!----HEADER STARTS------------>
       <header class="main-header">
@@ -43,8 +73,11 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="services.html">Services</a></li>
+                    <li><a class="dropdown-item" href="careers.html">Career</a></li>
                     <li><a class="dropdown-item" href="optimization.html">Search Engine Optimization</a></li>
-                    <li><a class="dropdown-item" href="optimization.html">Search Engine Optimization</a></li>
+                    <li><a class="dropdown-item" href="rate.html">Rate for Lovato Company</a></li>
+                    <li><a class="dropdown-item" href="maximize.html">Maximize</a></li>
+                    <li><a class="dropdown-item" href="rate.html">Our Rate</a></li>
                   </ul>
                 </li>
                 <li class="nav-">
@@ -61,7 +94,7 @@
                 </li>
               </ul>
               <div class="header-call">
-                <a href="#" class="filled-button header-btn">Talk to a human</a>
+                <a href="#" class="filled-button header-btn" data-bs-toggle="modal" data-bs-target="#talk-modal">Talk to a human</a>
               </div>
             </div>
           </div>
@@ -70,7 +103,7 @@
       <!----HEADER ENDS------------>
       <!-----HERO-STARTS---------------->
       <section class="hero">
-        <div class="page-container">
+        <div class="page-container" data-aos="fade-down" data-aos-duration="1500">
           <div class="page-breadcrumb">
             <nav
               style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
@@ -654,6 +687,9 @@
       </div>
     </footer>
     <!----FOOTER ENDS---->
+    <!---AOS JS----->
+    <script src="assets/plug-in/aos-js/aos.js"></script>
+    <!---AOS JS----->
     <!---BOOTSTRAP BUNDLE---->
     <script src="assets/plug-in/bootstrap/bootstrap.bundle.min.js"></script>
     <!---BOOTSTRAP BUNDLE---->

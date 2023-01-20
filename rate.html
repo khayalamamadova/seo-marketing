@@ -19,6 +19,33 @@
     <!-------======CUSTOM CSS======-->
   </head>
   <body>
+    <!--TALK MODAL STARTS---->
+    <div class="modal fade" id="talk-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title fs-5 text-center" id="exampleModalLabel">Subscribe to our newsletter</h4>
+            <form>
+              <div class="mb-3">
+                <label for="talk-name" class="form-label">Name*</label>
+                <input type="text" class="form-control" id="talk-name" placeholder="Your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="talk-email" class="form-label">Email*</label>
+                <input type="email" class="form-control" id="talk-email" placeholder="Your working email" required>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="filled-button">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TALK MODAL ENDS -->
     <div class="cover" style="background: url('assets/img/rate/background.png');" id="totop">
       <!----HEADER-STARTS----------->
       <header class="main-header">
@@ -43,10 +70,11 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="services.html">Services</a></li>
-                    <li><a class="dropdown-item" href="optimization.html">Search Engine Optimization</a>
-                    </li>
-                    <li><a class="dropdown-item" href="optimization.html">Search Engine Optimization</a>
-                    </li>
+                    <li><a class="dropdown-item" href="careers.html">Career</a></li>
+                    <li><a class="dropdown-item" href="optimization.html">Search Engine Optimization</a></li>
+                    <li><a class="dropdown-item" href="rate.html">Rate for Lovato Company</a></li>
+                    <li><a class="dropdown-item" href="maximize.html">Maximize</a></li>
+                    <li><a class="dropdown-item" href="rate.html">Our Rate</a></li>
                   </ul>
                 </li>
                 <li class="nav-item header-active">
@@ -63,7 +91,7 @@
                 </li>
               </ul>
               <div class="header-call">
-                <a href="#" class="filled-button header-btn">Talk to a human</a>
+                <a href="#" class="filled-button header-btn" data-bs-toggle="modal" data-bs-target="#talk-modal">Talk to a human</a>
               </div>
             </div>
           </div>
@@ -700,7 +728,7 @@
     <script src="assets/plug-in/bootstrap/bootstrap.bundle.min.js"></script>
     <!---BOOTSTRAP BUNDLE---->
     <!--CUSTOM JS-->
-    <script src="assets/js/scripts.js"></script>
+    <!-- <script src="assets/js/scripts.js"></script> -->
     <!--CUSTOM JS-->
   </body>
 </html>
