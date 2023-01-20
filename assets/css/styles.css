@@ -40,30 +40,6 @@ body {
 * {
   box-sizing: border-box;
 }
-/*preloader*/
-.preloader {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  background-color: #fff;
-}
-.preloader-wrapper {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-}
-.preloader-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.preloader-finish {
-  display: none;
-}
 .trending-news .trend-news .trend-news_pic img, .single-post .single-post_pic img, .sem-cover .sem .sem-content .pic-subtitle .sem-subtitle_img img, .sem-cover .sem .sem-content .sem-img img, .strategies-wrapper .strategies-container .strategies-illus .strategies-shape img, .charts-wrapper .chart-box_bottom .chart-pic img, .hero-img_box img, .trending-news a .trend-news .trend-news_pic img, .subscribe-blog .subscribe-blog_inner .illustrtion-form img, .contact-form .contact-illustration img, .seo-agency .seo-agency-inner .agency-right img, .seo-agency .seo-agency-inner .agency-middle img, .seo-agency .seo-agency-inner .agency-left .agency-left-bottom img, .seo-agency .seo-agency-inner .agency-left .agency-left-up img, .our-team .team-member .team-member_pic img, .careers .careers-pic img, .video .video-cover .mute-button .mute-button img, .seo-services .seo-service .col-12 .seo-box_img .seo-box_img img, .operate-market .market-boxes .row .col-12 .market-box .market-box_img .market-box_img img, .case-card_box .case-card_item .case-card_img .case-img_content .case-client-img .case-client-img img, .case-card_box .case-card_item .case-card_img .case-card_img img, .logo-wrapper img {
   width: 100%;
   height: 100%;
